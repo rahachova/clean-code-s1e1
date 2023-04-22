@@ -44,16 +44,19 @@
     display: flex;
 }
 
-.task-manager__incomplete-list, .task-manager__completed-list {
+.task-manager__incomplete-list,
+.task-manager__completed-list {
     margin: 0;
     padding: 0;
 }
 
-.task-manager__task, .task-manager__section-title {
+.task-manager__task,
+.task-manager__section-title {
     list-style: none;
 }
 
-.task-manager__input, .task-manager__button{
+.task-manager__input,
+.task-manager__button{
     outline: none;
 }
 
@@ -72,7 +75,8 @@
 }
 
 /* Heading */
-.task-manager__section-title, .task-manager > .task-manager-label {
+.task-manager__section-title,
+.task-manager > .task-manager-label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
