@@ -4,47 +4,59 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .heading {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .heading__image {
     width: 100%;
 }
+
 .heading__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.heading {
-    text-align: center;
+    
+    .heading {
+        text-align: center;
+    }
+
 }
-}
+
 .task-manager {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .task-manager__task-name {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
+
 .task-manager__new-task {
     display: flex;
 }
+
 .task-manager__incomplete-list, .task-manager__completed-list {
     margin:0;
     padding: 0px;
 }
+
 .task-manager__task, .task-manager__section-title {
     list-style:none;
 }
+
 .task-manager__input, .task-manager__button{
     outline:none;
 }
+
 .task-manager__button {
     background: none;
     border: 0px;
@@ -54,9 +66,11 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .task-manager__button:hover {
     color: #3a3a3a
 }
+
 /* Heading */
 .task-manager__section-title, .task-manager > .task-manager-label {
     color: #333;
@@ -67,6 +81,7 @@
     margin: 0;
     text-transform: uppercase;
 }
+
 .task-manager__input[type="text"] {
     margin: 0;
     font-size: 18px;
@@ -79,6 +94,7 @@
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 .task-manager__input[type="text"]:focus {
     color: #333;
 }
@@ -88,6 +104,7 @@
     display: block;
     margin: 0 0 20px;
 }
+
 .task-manager__new-task .task-manager__input {
     width: 318px;
 }
@@ -102,6 +119,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .task-manager__task > * {
     vertical-align: middle;
 }
@@ -109,20 +127,24 @@
 .task-manager__task > .task-manager__input[type="checkbox"] {
     margin: 0 10px;
 }
+
 .task-manager__task > .task-manager-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
+
 .task-manager__task > .task-manager__input[type="text"] {
     width: 226px
 }
+
 .task-manager__delete-icon {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .task-manager__delete-icon:hover {
     transform: rotateZ(0);
 }
