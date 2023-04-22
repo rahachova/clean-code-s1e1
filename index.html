@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="todo-app">
     <header class="heading">
       <img class="heading__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
       <a class="heading__link" href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -13,40 +13,40 @@
       </a>
     </header>
     <main class="task-manager">
-      <label for="new-task">Add Item</label>
+      <label class="task-manager-label" for="new-task">Add Item</label>
       <div class="task-manager__new-task">
-        <input class="task-manager__task-name" id="new-task" type="text">
-        <button>Add</button>
+        <input class="task-manager__input task-manager__task-name" id="new-task" type="text">
+        <button class="task-manager__button task-manager__add-button">Add</button>
       </div>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label class="task-manager__task-name">Pay Bills</label>
-          <input class="task-manager__task-name" type="text">
-          <button class="task-manager__edit-button">Edit</button>
-          <button class="task-manager__delete-button">
+      <h3 class="task-manager__section-title">Todo</h3>
+      <ul class="task-manager__incomplete-list" id="incomplete-tasks">
+        <li class="task-manager__task">
+          <input class="task-manager__input" type="checkbox">
+          <label class="task-manager-label task-manager__task-name">Pay Bills</label>
+          <input class="task-manager__input task-manager__task-name" type="text">
+          <button class="task-manager__button task-manager__edit-button">Edit</button>
+          <button class="task-manager__button task-manager__delete-button">
             <img class="task-manager__delete-icon" src="./remove.svg" alt="Delete icon">
           </button>
         </li>
-        <li class="task-manager__task--edit">
-          <input type="checkbox">
-          <label class="task-manager__task-name">Go Shopping</label>
-          <input class="task-manager__task-name" type="text" value="Go Shopping">
-          <button class="task-manager__edit-button">Save</button>
-          <button class="task-manager__delete-button">
+        <li class="task-manager__task task-manager__task--edit">
+          <input class="task-manager__input" type="checkbox">
+          <label class="task-manager-label task-manager__task-name">Go Shopping</label>
+          <input class="task-manager__input task-manager__task-name" type="text" value="Go Shopping">
+          <button class="task-manager__button task-manager__edit-button">Save</button>
+          <button class="task-manager__button task-manager__delete-button">
             <img class="task-manager__delete-icon" src="./remove.svg" alt="Delete icon">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task-manager__task-name">See the Doctor</label>
-          <input class="task-manager__task-name" type="text">
-          <button class="task-manager__edit-button">Edit</button>
-          <button class="task-manager__delete-button">
+      <h3 class="task-manager__section-title">Completed</h3>
+      <ul class="task-manager__completed-list" id="completed-tasks">
+        <li class="task-manager__task">
+          <input class="task-manager__input" type="checkbox" checked>
+          <label class="task-manager-label task-manager__task-name">See the Doctor</label>
+          <input class="task-manager__input task-manager__task-name" type="text">
+          <button class="task-manager__button task-manager__edit-button">Edit</button>
+          <button class="task-manager__button task-manager__delete-button">
             <img class="task-manager__delete-icon" src="./remove.svg" alt="Delete icon">
           </button>
         </li>

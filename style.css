@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.todo-app {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -18,7 +18,8 @@ body {
 }
 
 @media (max-width:768px) {
-.heading { text-align: center;
+.heading {
+    text-align: center;
 }
 }
 .task-manager {
@@ -34,17 +35,17 @@ body {
 .task-manager__new-task {
     display: flex;
 }
-ul {
+.task-manager__incomplete-list, .task-manager__completed-list {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.task-manager__task, .task-manager__section-title {
     list-style:none;
 }
-input,button{
+.task-manager__input, .task-manager__button{
     outline:none;
 }
-button {
+.task-manager__button {
     background: none;
     border: 0px;
     color: #888;
@@ -53,12 +54,11 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.task-manager__button:hover {
     color: #3a3a3a
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.task-manager__section-title, .task-manager > .task-manager-label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,7 +67,7 @@ label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.task-manager__input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,21 +79,21 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task-manager__input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.task-manager > .task-manager-label {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+.task-manager__new-task .task-manager__input {
     width: 318px;
 }
 
 /* Task list */
-li {
+.task-manager__task {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -102,20 +102,20 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.task-manager__task > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task-manager__task > .task-manager__input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.task-manager__task > .task-manager-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.task-manager__task > .task-manager__input[type="text"] {
     width: 226px
 }
 .task-manager__delete-icon {
@@ -128,21 +128,21 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task-manager__completed-list .task-manager__task-name {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.task-manager__task .task-manager__input[type="text"] {
     display:none
 }
 
-.task-manager__task--edit input[type="text"] {
+.task-manager__task--edit .task-manager__input[type="text"] {
     display:inline-block;
     width:224px
 }
 
-.task-manager__task--edit label {
+.task-manager__task--edit .task-manager-label {
     display:none;
 }
